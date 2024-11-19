@@ -8,7 +8,6 @@ import com.food.ordering.system.order.service.domain.ports.output.repository.Ord
 import com.food.ordering.system.order.service.domain.ports.output.repository.RestaurantRepository;
 import com.food.ordering.system.service.order.service.domain.OrderDomainService;
 import com.food.ordering.system.service.order.service.domain.OrderDomainServiceImpl;
-import com.food.ordering.system.service.order.service.domain.entity.Customer;
 import org.mockito.Mockito;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -46,6 +45,7 @@ public class OrderTestConfiguration {
         return Mockito.mock(RestaurantRepository.class);
     }
 
+    @Bean
     public OrderDomainService orderDomainService() {
         return new OrderDomainServiceImpl();
     }
