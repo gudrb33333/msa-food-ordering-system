@@ -24,6 +24,7 @@
 
   <properties>
     <maven-compiler-plugin.version>3.9.0</maven-compiler-plugin.version>
+    <mockito.versoin>4.3.1</mockito.versoin>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -58,6 +59,12 @@
         <groupId>com.food.ordering.system</groupId>
         <artifactId>common-domain</artifactId>
         <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mokito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>${mockito.versoin}</version>
+        <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
